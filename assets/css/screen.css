@@ -66,6 +66,7 @@ h1{
 .content{
     width: 600px;
     margin: 0px auto;
+    padding: 64px 0 0 0 !important;
 }
 
 /* --- navigatie --- */

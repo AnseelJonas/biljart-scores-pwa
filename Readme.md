@@ -5,8 +5,7 @@ Student: Jonas Anseel
 ## Live demo
 https://biljart.app
 
-## Ondersteunde browsers
-Geteste browers:
+## Ondersteunde & geteste browsers
 * Google Chroome
 * Mozilla Firefox
 
