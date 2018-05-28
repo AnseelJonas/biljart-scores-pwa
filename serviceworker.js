@@ -43,12 +43,12 @@ function precache() {
 
 self.addEventListener('fetch', function(evt) {
     evt.respondWith(
-        fromCache(evt.request)
-        .catch(fromServer(evt.request))
-    );
-    evt.waitUntil(
-        update(evt.request)
-    );
+        fromServer(evt.request)
+        .catch(function(error){
+            //console.log(error);
+            return fromCache(evt.request);
+        })
+    )
 });
 
 function fromCache(request) {
@@ -57,7 +57,9 @@ function fromCache(request) {
     .then(function(cache){
         return cache.match(request)
         .then( function(matching) {
-            return matching || Promise.reject('no-match');
+            console.log(request);//TOO temp
+            console.log(matching);//TODO temp
+            return matching || caches.match('/index.html');
         });
     });
 }
@@ -65,15 +67,6 @@ function fromCache(request) {
 function fromServer(request){
     return fetch(request)
     .then(function(response){ return response});
-}
-
-function update(request) {
-    return caches
-    .open(CACHE_NAME)
-    .then(function(cache){
-        return fetch(request)
-        .then(function(response){return cache.put(request, response)});
-    });
 }
 
 self.addEventListener('activate', function(evt) {
