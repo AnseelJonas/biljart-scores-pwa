@@ -1,5 +1,5 @@
 <template>
-  <v-layout column>
+  <v-layout column v-touch="{ left: () => swipeLeft() }">
 
     <h1 class="title">Matches</h1>
     
@@ -41,6 +41,9 @@
           });
         });
       },
+      swipeLeft(){
+        this.$router.push({name: 'Players'});
+      }
     },
     components:{
       empty,
