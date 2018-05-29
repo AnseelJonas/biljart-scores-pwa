@@ -17,7 +17,11 @@ h1{
 
 .dialog{
     max-width:650px;
-  }
+}
+
+.addPoints .btn__content{
+    white-space:pre;
+}
 
 /* --- material icons --- */
 @font-face {

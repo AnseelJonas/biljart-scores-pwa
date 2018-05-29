@@ -6,13 +6,13 @@
 
     <matchDetails v-bind:match="match"></matchDetails>
 
-    <v-container>
+    <v-container class="addPoints">
       <v-layout row v-bind:class="[ match.isCurrentPlayer1 ? 'justify-start' : 'justify-end' ]">
-        <v-form ref="form" v-model="valid" id="formAddPoints">
+        <v-form ref="form" v-model="valid">
           <v-text-field ref="focus" v-model="newPoints" label="Punten" v-bind:rules="newPointsRules" 
                         type="number" required autofocus v-on:keyup.enter.native="addPoints()" ></v-text-field>
           
-          <v-btn v-on:disabled="!valid" v-on:click="addPoints()">Punten toevoegen</v-btn>
+          <v-btn v-on:disabled="!valid" v-on:click="addPoints()"><span>Punten</span> toevoegen</v-btn>
         </v-form>
       </v-layout>
     </v-container>
@@ -80,7 +80,18 @@ export default {
 </script>
 
 <style scoped>
-.formAddPoints{
+.addPoints{
+  padding: 0;
+}
+
+.addPoints form{
+  min-width:100px;
   max-width:45%;
+}
+
+@media screen and (max-width: 500px) {
+  .addPoints span{
+    display: none;
+  }
 }
 </style>

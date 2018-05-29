@@ -51,12 +51,16 @@ export default {
 table{
   width:300px;
   max-width:100%;
-  margin: 0 auto;
+  margin: 8px auto;
 }
 
 td{
   width:33;
   text-align:center;
   line-height: 200%;
+}
+
+.container{
+  padding: 0;
 }
 </style>
