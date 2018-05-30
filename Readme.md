@@ -1,13 +1,17 @@
 # Readme PWA Biljart Scores
-Partim: Mobile Web Apps
+Partim: Mobile Web Apps \n
 Student: Jonas Anseel
 
 ## Live demo
 https://biljart.app
 
 ## Ondersteunde & geteste browsers
-* Google Chroome
-* Mozilla Firefox
+* Windows 10
+   * Mozilla Firefox
+   * Google Chrome
+   * Opera
+* Android
+   * Google Chrome
 
 ## Gebruikte technologiën/frameworks
 * Manifest
