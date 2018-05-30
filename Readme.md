@@ -1,5 +1,5 @@
 # Readme PWA Biljart Scores
-Partim: Mobile Web Apps \n
+Partim: Mobile Web Apps - 
 Student: Jonas Anseel
 
 ## Live demo
