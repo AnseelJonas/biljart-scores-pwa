@@ -45,7 +45,6 @@ self.addEventListener('fetch', function(evt) {
     evt.respondWith(
         fromServer(evt.request)
         .catch(function(error){
-            //console.log(error);
             return fromCache(evt.request);
         })
     )
@@ -57,8 +56,6 @@ function fromCache(request) {
     .then(function(cache){
         return cache.match(request)
         .then( function(matching) {
-            console.log(request);//TOO temp
-            console.log(matching);//TODO temp
             return matching || caches.match('/index.html');
         });
     });

@@ -117,7 +117,7 @@ export function newIDPromise(){
         .then(() => matchesStorage.getItem('nextID'))
         .then(id => id || 1)
         .then(id =>{
-            newID = id
-            matchesStorage.setItem('nextID', id + 1)
+            newID = id;
+            matchesStorage.setItem('nextID', id + 1);
         }).then(() => newID);
 }

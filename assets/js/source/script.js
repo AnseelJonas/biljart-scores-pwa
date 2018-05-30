@@ -5,8 +5,8 @@ import 'babel-polyfill'
 
 import routes from './routes.js'
 
-Vue.use(Vuetify)
-Vue.use(VueRouter)
+Vue.use(Vuetify);
+Vue.use(VueRouter);
 
 const router = new VueRouter({routes});
 
@@ -21,7 +21,7 @@ new Vue({
           { icon: "group",          text: "Clubs",      page: "Clubs" }
         ],
     }
-})
+});
 
 function registerServiceWorker(){
     if ('serviceWorker' in navigator) {
@@ -35,4 +35,4 @@ function registerServiceWorker(){
     }
 }
 
-registerServiceWorker()
+registerServiceWorker();

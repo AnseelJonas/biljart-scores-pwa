@@ -1,5 +1,5 @@
-const path = require('path')
-const { VueLoaderPlugin } = require('vue-loader')
+const path = require('path');
+const { VueLoaderPlugin } = require('vue-loader');
 const UglifyJsWebpackPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
@@ -40,4 +40,4 @@ module.exports = {
         new VueLoaderPlugin(),
         new UglifyJsWebpackPlugin()
     ]
-}
+};

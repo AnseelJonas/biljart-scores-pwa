@@ -21,7 +21,7 @@ import * as c from '../../assets/js/source/clubs.js';
 
 const EDIT_CLUB = "Club aanpassen";
 const NEW_CLUB = "Nieuwe club";
-const NAME_REQUIRED = "Naam is verplicht."
+const NAME_REQUIRED = "Naam is verplicht.";
 
 export default {
   data:function(){

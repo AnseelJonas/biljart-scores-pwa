@@ -48,7 +48,7 @@ export function newIDPromise(){
         .then(() => playersStorage.getItem('nextID'))
         .then(id => id || 1)
         .then(id =>{
-            newID = id
-            playersStorage.setItem('nextID', id + 1)
+            newID = id;
+            playersStorage.setItem('nextID', id + 1);
         }).then(() => newID);
 }
