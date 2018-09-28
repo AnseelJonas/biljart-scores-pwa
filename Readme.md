@@ -1,6 +1,9 @@
 # Readme PWA Biljart Scores
-Partim: Mobile Web Apps - 
+Partim: Mobile Web Apps
+
 Student: Jonas Anseel
+
+Situering: De opdracht was een progressive web app te maken. Vue.js hadden we heel kort in een andere les gezien. Het was mijn eigen keuze om het in dit project te gebruiken en er zelf wat meer over te leren.
 
 ## Live demo
 https://biljart.app
