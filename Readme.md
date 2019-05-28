@@ -5,8 +5,8 @@ Student: Jonas Anseel
 
 Situering: De opdracht was een progressive web app te maken. Vue.js hadden we heel kort in een andere les gezien. Het was mijn eigen keuze om het in dit project te gebruiken en er zelf wat meer over te leren.
 
-## Live demo
-https://biljart.app
+## ~~Live demo~~
+~~https://biljart.app~~
 
 ## Over de pwa
 Voor dit project heb ik een progressive web app gemaakt om de scores tijdens het biljarten bij te houden. De app is volledig offline te gebruiken en heeft de volgende functionaliteiten:
